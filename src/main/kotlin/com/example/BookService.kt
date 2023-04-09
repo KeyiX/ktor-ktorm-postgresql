@@ -46,9 +46,9 @@ class BookService {
     }
 
     private val database = Database.connect(
-        url = "jdbc:mysql://wanqutire-server.mysql.database.azure.com:3306/wanqutire-database",
-        driver = "com.mysql.jdbc.Driver",
-        user = "jneqwxcczb",
-        password = "76H4BYBP4B51046Y$"
+        url = "jdbc:postgresql://wanqutire1-server.postgres.database.azure.com:5432/wanqutire1-database",
+        driver = "org.postgresql.Driver",
+        user = "rrkggusubg",
+        password = "0054ZE5R120B55EH$"
     )
 }
