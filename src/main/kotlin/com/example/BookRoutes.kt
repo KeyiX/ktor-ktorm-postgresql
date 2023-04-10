@@ -16,6 +16,15 @@ fun Application.configureBookRoutes() {
             updateBookByIdRoute(bookService)
             deleteBookByIdRoute(bookService)
         }
+        route("/test") {
+            createBook(bookService)
+        }
+    }
+}
+
+fun Route.testEndpoint() {
+    post {
+        call.respond(HttpStatusCode.Created)
     }
 }
 
