@@ -17,7 +17,7 @@ fun Application.configureBookRoutes() {
             deleteBookByIdRoute(bookService)
         }
         route("/test") {
-            createBook(bookService)
+            testEndpoint()
         }
     }
 }
