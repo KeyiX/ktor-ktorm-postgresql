@@ -23,7 +23,7 @@ fun Application.configureBookRoutes() {
 }
 
 fun Route.testEndpoint() {
-    post {
+    get {
         call.respond(HttpStatusCode.Created)
     }
 }
